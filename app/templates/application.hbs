@@ -1,8 +1,12 @@
 <h2 id="title">Welcome to Ember</h2><br>
 <br>
+<hr />
 {{#each model as |student|}}
     {{#link-to 'students' student}}{{student.name}}{{/link-to}} <br>
 {{/each}}
+<hr />
+{{action-component}}
+<hr />
 {{outlet}}
 <br>
 <br>
